@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KreditBee</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        line-height: 1.6;
+        background-color: #f9f9f9;
+      }
+
+      /* Navbar */
+      .navbar {
+        background-color: #fff;
+        padding: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #333;
+      }
+
+      .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+
+      .navbar ul li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 1rem;
+      }
+
+      .nav-buttons {
+        display: flex;
+        gap: 10px;
+      }
+
+      .nav-buttons button {
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .sign-up {
+        background-color: #f14668;
+        color: #fff;
+        border-radius: 5px;
+      }
+
+      .title{
+        text-align: center;
+      }
+      .why-choose {
+        /* text-align: center; */
+        padding: 50px 20px;
+        background-color: #fff;
+      }
+
+      .why-choose h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+      }
+
+      .features {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+      }
+
+      .feature-card {
+        width: 30%;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* text-align: center; */
+      }
+
+      .feature-card img {
+        width: 50px;
+        margin-bottom: 20px;
+      }
+
+      /* Blog Section */
+      .blog-section {
+        padding: 50px 20px;
+        background-color: #fff;
+      }
+
+      .blog-section h2 {
+        font-size: 1.8rem;
+        text-align: left;
+        margin-bottom: 20px;
+      }
+
+      .blog-cards {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .blog-card {
+        width: 25%;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .blog-card img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        border-radius: 10px;
+      }
+
+      .blog-card h3 {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .blog-card p {
+        padding-left: 10px;
+        margin-bottom: 30px;
+      }
+
+      /* Create Account Section */
+      .create-account {
+        background-color: #ffe4a1;
+        padding: 30px;
+        text-align: center;
+      }
+
+      .create-account form {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      .create-account form label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 1rem;
+      }
+
+      .create-account form input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+      }
+
+      .create-account form button {
+        padding: 10px 20px;
+        background-color: #f14668;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">KreditBee</div>
+        <nav>
+          <ul>
+            <li><a href="#">Loans</a></li>
+            <li><a href="#">Calculators</a></li>
+            <li><a href="#">Credit Report</a></li>
+            <li><a href="#">Refer & Earn</a></li>
+          </ul>
+        </nav>
+        <div class="nav-buttons">
+          <button class="cart">🛒</button>
+          <button class="sign-up">Sign Up</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="why-choose">
+      <h1 class="title">Why choose KreditBee?</h1>
+      <div class="features">
+        <div class="feature-card">
+          <img src="./image/feature_third_img.png" alt="Low Interest Rates" />
+          <h3>Lower Interest Rates</h3>
+          <p>
+            Get loans for multiple purposes at lower interest rates to suit your
+            needs.
+          </p>
+        </div>
+        <div class="feature-card">
+          <img src="./image/feature_first_img.png" alt="Fast Processing" />
+          <h3>Fast Processing and Disbursal</h3>
+          <p>
+            Apply online, check your eligibility, and get money directly in your
+            bank in 10 minutes.
+          </p>
+        </div>
+        <div class="feature-card">
+          <img src="./image/feature_second_img.png" alt="Easy Repayment" />
+          <h3>Easy Repayment Options</h3>
+          <p>Repay the loan amount in easy EMI with flexible tenure options.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-section">
+      <h2>Fresh from the blog</h2>
+      <div class="blog-cards">
+        <div class="blog-card">
+          <img src="./image/first_img.png" alt="Image 1" />
+          <h3>9 Comfy Throws for Cosy Autumn Vibes</h3>
+          <p>
+            Embrace the snuggling season with stylish throws that will warm your
+            hearts.
+          </p>
+        </div>
+        <div class="blog-card">
+          <img src="./image/second_img.png" alt="Image 2" />
+          <h3>14 Beautiful Bags That Express Your Unique Style</h3>
+          <p>
+            Amp up your fashion game with bags that perfectly match your
+            aesthetic.
+          </p>
+        </div>
+        <div class="blog-card">
+          <img src="./image/third_img.png" alt="Image 3" />
+          <h3>The Best Gift Ideas for Kids of All Ages</h3>
+          <p>Shop the sweetest surprises for all little ones in your family.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="create-account">
+      <h2>Create Account</h2>
+      <form action="#">
+        <label for="full-name">Full Name:</label>
+        <input type="text" id="full-name" name="full-name" required />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="referral">Referral Code (Optional):</label>
+        <input type="text" id="referral" name="referral" />
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
